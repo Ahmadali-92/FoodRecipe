@@ -1,0 +1,45 @@
+.listItems {
+  margin-top: 20px;
+  width: 100%;
+  background-color: #e8e6e6;
+  height: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.listItems > ul {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  gap: 54px;
+  padding: 0 10px;
+}
+.listItems > ul > li {
+  font-size: 11px;
+  font-weight: 700;
+  transition: all 0.3s;
+}
+.listItems > ul > li:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+.showContent {
+  display: flex;
+}
+@media screen and (max-width: 600px) {
+  .listItems {
+    height: 8vh;
+    overflow-x: auto;
+  }
+  .listItems > ul {
+    width: 90%;
+    gap: 3rem;
+  }
+  .listItems > ul > li {
+    font-size: 15px;
+  }
+}
+
+.listItems::-webkit-scrollbar {
+  display: none;
+}

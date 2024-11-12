@@ -1,0 +1,43 @@
+.ListItems {
+  display: flex;
+}
+.Items {
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: all 0.3s;
+  flex-direction: column-reverse;
+}
+.Items:hover {
+  transform: translateY(-2%);
+}
+.contentImage > img {
+  height: 200px;
+  border-radius: 15px;
+  margin: 10px;
+}
+.contentHeading {
+  font-size: 11px;
+  font-weight: 700;
+  margin-top: 0px;
+}
+
+@media screen and (max-width: 600px) {
+  .Items {
+    flex-direction: column-reverse;
+    height: 100%;
+    width: 20rem;
+    padding-top: 5px;
+  }
+  .contentHeading {
+    font-size: 1.1rem;
+    margin: 5px;
+    margin-bottom: 11px;
+  }
+  .contentImage > img {
+    height: 18rem;
+  }
+}

@@ -1,0 +1,77 @@
+.mainContent {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+}
+.itemImage {
+  width: 50vmin;
+  margin-right: 40px;
+  border-radius: 20px;
+}
+.itemData {
+  width: 56%;
+}
+.itemHeading {
+  margin: 0;
+  font-style: italic;
+  font-size: 2rem;
+  opacity: 0.7;
+  margin-bottom: 5px;
+  margin-top: 4px;
+}
+.itemSpan {
+  display: flex;
+  gap: 20px;
+}
+.itemCategory > span,
+.itemArea > span {
+  opacity: 0.8;
+  letter-spacing: 1px;
+  font-style: italic;
+}
+.itemPara {
+  border-bottom: 1px solid black;
+  height: 36vh;
+  overflow-y: auto;
+  margin-top: 10px;
+  line-height: 1.5rem;
+}
+.itemLink {
+  color: black;
+  text-decoration: none;
+}
+.itemLink:visited {
+  color: rgba(255, 0, 0, 0.262);
+}
+.itemVideo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+  .mainContent {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+  .itemData {
+    margin-top: 20px;
+  }
+  .itemImage {
+    width: 90%;
+    margin-right: 0px;
+    margin-top: 20px;
+  }
+  .itemData {
+    width: 90%;
+  }
+  .itemSpan {
+    gap: 10%;
+  }
+}
+
+.itemPara::-webkit-scrollbar {
+  display: none;
+}
